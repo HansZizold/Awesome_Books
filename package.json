@@ -1,0 +1,31 @@
+{
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "hint": "^6.2.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  },
+  "name": "portfolio",
+  "description": "In this project first a mobile version will de deployed and then a desktop version.\r 2022 - Week 19: Popup window showing projects details added. Form validation using JS added. Hamburguer button functionality added. All of these new functionalities were implemented using JavaScript.",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HansZizold/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HansZizold/Portfolio/issues"
+  },
+  "homepage": "https://github.com/HansZizold/Portfolio#readme"
+}

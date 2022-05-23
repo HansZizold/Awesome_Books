@@ -1,0 +1,4 @@
+#Exercice of using .gitignore file
+#A gitignore file specifies intentionally untracked files that Git should ignore.
+test.md
+node_modules
