@@ -43,17 +43,17 @@ The localSorage is updated also.
 
 ### Authors
 
-  Hans Paul Zizold
+Hans Paul Zizold
     
   [GITHUB](https://github.com/HansZizold)
 
   [LINKEDIN](https://www.linkedin.com/in/hans-paul-zizold-37129037/)
 
-  Shay Craig
+Shay Craig
     
   [GITHUB](https://github.com/craigs40)
 
-  Andres Garzon Maldonado
+Andres Garzon Maldonado
     
   [GITHUB](https://github.com/andgarzonmal)
 
