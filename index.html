@@ -9,24 +9,25 @@
 <body>
   <main class="maincontainer">
     <section class="firstsection">
-      <h1 class="title">Awesome Books</h1>
+      <h1 class="pagetitle">Awesome Books</h1>
       <div class="library">
-        <ul>
-          <li>
+        <ul class="ullibrary">
+          <!-- <li>
             <p>Title</p> 
             <p>Author</p> 
             <button class="removebook" id="removebook" value="Add Book" onclick="">Remove</button>
-          </li>
+          </li> -->
         </ul>
       </div>
       <form action="#" method="post" id="senddata">
-        <input type="text" class="title" id="title" name="title" required placeholder="Title" maxlength="30" onkeyup="">
+        <input type="text" class="title" id="title" name="title" required placeholder="Title" maxlength="30">
         <br>
-        <input type="text" class="author" id="author" name="author" required placeholder="author" maxlength="30" onkeyup="">
+        <input type="text" class="author" id="author" name="author" required placeholder="author" maxlength="30">
         <br>
         <input type="submit" class="addbook" id="addbook" value="Add Book">
       </form>                
     </section>
   </main>
+  <script src="./script.js"></script>
 </body>
 </html>
