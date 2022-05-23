@@ -18,7 +18,7 @@ The localSorage is updated also.
 
 ## LIVE DEMO: 
 
-[Capstone Project](https://hanszizold.github.io/Awesome_Books/)
+[Awesome Books Project](https://hanszizold.github.io/Awesome_Books/)
 
 ## Getting Started
 
@@ -41,7 +41,8 @@ The localSorage is updated also.
 
 - You can download an extension for VSCode named "Live Server" so you can see the actual project working in the browser
 
-Authors: 
+### Authors
+
   Hans Paul Zizold
     
   [GITHUB](https://github.com/HansZizold)
