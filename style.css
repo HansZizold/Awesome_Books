@@ -1,0 +1,9 @@
+li {
+    list-style: none;
+}
+
+hr {
+    width: 20%;
+    position: absolute;
+    left: 0;
+}
