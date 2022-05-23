@@ -27,9 +27,7 @@ function remove() {
   removebook.forEach((elem) => {
     elem.addEventListener('click', () => {
       elem.parentNode.remove();
-      console.log(bookList)
       bookList = bookList.filter(book => book.index !== Number(elem.parentNode.id))
-      console.log(bookList);
       localStorage.setItem('mylibrary', JSON.stringify(bookList)); 
     });
   });
