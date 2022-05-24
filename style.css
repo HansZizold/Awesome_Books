@@ -1,9 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+  font-family: 'Comic Neue', cursive;
+  font-size: 14px;
+  line-height: 1.5;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.firstsection {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button,
+input#addbook,
+input {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.4rem;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+section,
+h1,
+div,
+form {
+  margin: 0 auto;
+  width: 56%;
+}
+
+.pagetitle {
+  text-align: center;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
 li {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
 }
 
 hr {
-  width: 20%;
-  position: absolute;
-  left: 0;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.newbook {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  width: 72%;
+}
+
+.addbutton {
+  width: 72%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.library {
+  border: 2px solid #000;
+  margin-bottom: 24px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.ullibrary > *:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.line {
+  width: 16%;
+  height: 3px;
+  border-width: 0;
+  background-color: black;
 }
