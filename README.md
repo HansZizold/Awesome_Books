@@ -15,6 +15,7 @@ The localSorage is updated also.
 
 ## HISTORY OF CHANGES
 **2022 May 23**: First version released and presented for review.
+
 **2022 May 24**: Project modified to include a class with methods for adding and removing books. CSS and HTML files were updated to style the page.
 
 ## LIVE DEMO: 
