@@ -8,10 +8,8 @@ const getmylibrary = JSON.parse(localStorage.getItem('mylibrary'));
 
 const book = ({ title, author, index }) => `
 <li id=${index}>
-  <p>${title}</p> 
-  <p>${author}</p> 
+  <p>'${title}' by ${author} </p> 
   <button class="removebook" id="removebook" value="Add Book" onclick="">Remove</button>
-  <hr>
 </li>`;
 
 class Book {
