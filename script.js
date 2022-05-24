@@ -1,4 +1,4 @@
-let bookList = [];
+// const bookList = [];
 
 const title = document.querySelector('.title');
 const author = document.querySelector('.author');
@@ -16,6 +16,7 @@ class Book {
   constructor() {
     this.bookList = [];
   }
+
   addbooks() {
     const mybook = {
       title: title.value,
@@ -37,7 +38,7 @@ class Book {
         elem.parentNode.remove();
 
         this.bookList = this.bookList.filter(
-          (book) => book.index !== Number(elem.parentNode.id)
+          (book) => book.index !== Number(elem.parentNode.id),
         );
 
         localStorage.setItem('mylibrary', JSON.stringify(this.bookList));
@@ -47,15 +48,13 @@ class Book {
 
   addhtml() {
     ullibrary.innerHTML = '';
-    this.bookList.forEach((element) =>
-      ullibrary.insertAdjacentHTML('beforeend', book(element))
-    );
+    this.bookList.forEach((element) => ullibrary.insertAdjacentHTML('beforeend', book(element)));
 
     localStorage.setItem('mylibrary', JSON.stringify(this.bookList));
   }
 }
 
-let myBooks = new Book();
+const myBooks = new Book();
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -66,7 +65,6 @@ form.addEventListener('submit', (e) => {
 
 if (getmylibrary.length > 0) {
   myBooks.bookList = getmylibrary;
-
   myBooks.addhtml();
   myBooks.remove();
 }

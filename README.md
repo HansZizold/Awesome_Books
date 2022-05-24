@@ -2,7 +2,7 @@
 A collection of books
 
 ## DESCRIPTION
-In this project, a basic website that allows users to add/remove books from a list was deployed using JavaScript objects and arrays. 
+In this project, a basic website that allows users to add/remove books from a list was deployed using JavaScript objects and arrays.
 The DOM is dynamically modified according to the addings and removings operations.
 The localSorage is updated also.
 
@@ -15,6 +15,7 @@ The localSorage is updated also.
 
 ## HISTORY OF CHANGES
 **2022 May 23**: First version released and presented for review.
+**2022 May 24**: Project modified to include a class with methods for adding and removing books. CSS and HTML files were updated to style the page.
 
 ## LIVE DEMO: 
 
@@ -58,4 +59,3 @@ Andres Garzon Maldonado
   [GITHUB](https://github.com/andgarzonmal)
 
 ## ACKNOWLEDMENTS: 
-

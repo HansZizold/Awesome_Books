@@ -6,6 +6,14 @@ body {
   line-height: 1.5;
   width: 100vw;
   height: 100vh;
+  margin: 0;
+}
+
+.firstsection {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button,
@@ -23,7 +31,11 @@ h1,
 div,
 form {
   margin: 0 auto;
-  width: 50%;
+  width: 56%;
+}
+
+.pagetitle {
+  text-align: center;
 }
 
 input {
@@ -36,23 +48,49 @@ li {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0 10px;
 }
 
 hr {
   width: 30%;
+  margin-bottom: 20px;
+}
+
+.newbook {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  width: 72%;
+}
+
+.addbutton {
+  width: 72%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .library {
   border: 2px solid #000;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 ul {
-  padding-right: 40px;
+  margin: 0;
+  padding: 0;
 }
 
+.ullibrary > *:nth-child(odd) {
+  background-color: lightgray;
+}
 
-
-.ullibrary >*:nth-child(odd) {
-  background-color: gray;
+.line {
+  width: 16%;
+  height: 3px;
+  border-width: 0;
+  background-color: black;
 }
