@@ -35,6 +35,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 hr {
@@ -51,3 +52,7 @@ ul {
 }
 
 
+
+.ullibrary >*:nth-child(odd) {
+  background-color: gray;
+}
