@@ -38,7 +38,7 @@ class Book {
         elem.parentNode.remove();
 
         this.bookList = this.bookList.filter(
-          (book) => book.index !== Number(elem.parentNode.id)
+          (book) => book.index !== Number(elem.parentNode.id),
         );
 
         localStorage.setItem('mylibrary', JSON.stringify(this.bookList));
@@ -48,9 +48,7 @@ class Book {
 
   addhtml() {
     ullibrary.innerHTML = '';
-    this.bookList.forEach((element) =>
-      ullibrary.insertAdjacentHTML('beforeend', book(element))
-    );
+    this.bookList.forEach((element) => ullibrary.insertAdjacentHTML('beforeend', book(element)));
 
     localStorage.setItem('mylibrary', JSON.stringify(this.bookList));
   }
@@ -80,6 +78,14 @@ function addNewBook() {
 }
 
 addBooksSelector.addEventListener('click', addNewBook);
+
+function contact() {
+  addmybooks.style.display = 'none';
+  contactInfo.style.display = 'unset';
+  bookshelf.style.display = 'none';
+}
+
+contactSelector.addEventListener('click', contact);
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();

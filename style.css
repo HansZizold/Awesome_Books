@@ -104,21 +104,29 @@ ul {
   background-color: black;
 }
 
-#header,
-.footer {
-  display:flex;
+#header {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  margin:30px ;
+  margin: 30px;
   border: #000 1px solid;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  border: #000 1px solid;
+  bottom: 0;
+}
+
 .links {
-  display:flex;
+  display: flex;
 }
 
 .lilinks {
-  padding: 0px 8px ;
+  padding: 0 8px;
   width: 60px;
 }
 
@@ -142,13 +150,7 @@ ul {
 }
 
 .logo {
-  margin: 10px 0px;
-}
-
-.footer {
-  width: 96%;
-  /* position: absolute; */
-  bottom: 0;
+  margin: 10px 0;
 }
 
 .footer-text {
@@ -162,6 +164,7 @@ li.contact-list {
 h1 {
   text-align: center;
 }
+
 .contact-info {
   display: none;
   flex-direction: column;
@@ -180,12 +183,13 @@ h1 {
 
 .contactdata {
   margin-top: 16px;
-  /* list-style: decimal; */
+
+  /* list-style: circle; */
   align-self: flex-start;
 }
 
 .addmybooks {
-  display: none
+  display: none;
 }
 
 .bookshelf {
