@@ -18,6 +18,10 @@ class Book {
   }
 
   addbooks() {
+    if (this.bookList.some((book)=>book.title === title.value)){
+      alert("book already added")
+      return 
+    }
     const mybook = {
       title: title.value,
       author: author.value,
