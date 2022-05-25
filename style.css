@@ -9,6 +9,13 @@ body {
   margin: 0;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
 .firstsection {
   width: 100vw;
   display: flex;
@@ -93,4 +100,39 @@ ul {
   height: 3px;
   border-width: 0;
   background-color: black;
+}
+
+#header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:30px ;
+  border: #000 1px solid;
+}
+
+.links {
+  display:flex;
+}
+
+.lilinks {
+  padding: 0px 8px ;
+  width: 60px;
+}
+
+.header-title {
+  width: 100%;
+  margin-left: 24px;
+}
+
+#list {
+  width: 40px;
+}
+
+#Add-New {
+  border-left: #000 2px solid;
+  border-right: #000 2px solid;
+}
+
+.logo {
+  margin: 10px 0px;
 }
