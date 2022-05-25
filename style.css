@@ -9,6 +9,13 @@ body {
   margin: 0;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
 .firstsection {
   width: 100vw;
   display: flex;
@@ -77,6 +84,8 @@ hr {
 .library {
   border: 2px solid #000;
   margin-bottom: 24px;
+  min-height: 200px;
+  width: 100%;
 }
 
 ul {
@@ -93,4 +102,96 @@ ul {
   height: 3px;
   border-width: 0;
   background-color: black;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  border: #000 1px solid;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  border: #000 1px solid;
+  bottom: 0;
+}
+
+.links {
+  display: flex;
+}
+
+.lilinks {
+  padding: 0 8px;
+  width: 60px;
+}
+
+.lilinks:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.header-title {
+  width: 100%;
+  margin-left: 24px;
+}
+
+#list {
+  width: 40px;
+}
+
+#Add-New {
+  border-left: #000 2px solid;
+  border-right: #000 2px solid;
+}
+
+.logo {
+  margin: 10px 0;
+}
+
+.footer-text {
+  margin: 10px;
+}
+
+li.contact-list {
+  list-style: decimal;
+}
+
+h1 {
+  text-align: center;
+}
+
+.contact-info {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactinf {
+  margin-bottom: 24px;
+}
+
+.contact-text {
+  margin: 0;
+  align-self: flex-start;
+}
+
+.contactdata {
+  margin-top: 16px;
+
+  /* list-style: circle; */
+  align-self: flex-start;
+}
+
+.addmybooks {
+  display: none;
+}
+
+.bookshelf {
+  display: unset;
 }
