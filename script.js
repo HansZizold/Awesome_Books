@@ -56,6 +56,21 @@ class Book {
 
 const myBooks = new Book();
 
+const listSelector = document.getElementById('list')
+const addBooksSelector = document.getElementById('Add-New') 
+const contactSelector = document.getElementById('Contact') 
+const addmybooks = document.querySelector('.addmybooks')
+const contactInfo = document.querySelector('.contact-info')
+const bookshelf = document.querySelector('.bookshelf')
+
+function showMyBooks() {
+  addmybooks.style.display = 'none';
+  contactInfo.style.display = 'none';
+  bookshelf.style.display = 'unset';
+}
+
+listSelector.addEventListener('click', showMyBooks)
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   myBooks.addbooks();
