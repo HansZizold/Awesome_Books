@@ -102,7 +102,8 @@ ul {
   background-color: black;
 }
 
-#header{
+#header,
+.footer {
   display:flex;
   justify-content: space-between;
   align-items: center;
@@ -135,4 +136,14 @@ ul {
 
 .logo {
   margin: 10px 0px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 96%;
+}
+
+.footer-text {
+  margin: 10px;
 }
