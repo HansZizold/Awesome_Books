@@ -72,7 +72,6 @@ function showMyBooks() {
   contactInfo.style.display = 'none';
   bookshelf.style.display = 'unset';
 }
-
 listSelector.addEventListener('click', showMyBooks);
 
 function addNewBook() {
@@ -80,7 +79,6 @@ function addNewBook() {
   contactInfo.style.display = 'none';
   bookshelf.style.display = 'none';
 }
-
 addBooksSelector.addEventListener('click', addNewBook);
 
 function contact() {
@@ -88,7 +86,6 @@ function contact() {
   contactInfo.style.display = 'unset';
   bookshelf.style.display = 'none';
 }
-
 contactSelector.addEventListener('click', contact);
 
 form.addEventListener('submit', (e) => {
