@@ -18,6 +18,8 @@ The localSorage is updated also.
 
 **2022 May 24**: Project modified to include a class with methods for adding and removing books. CSS and HTML files were updated to style the page.
 
+**2022 May 25**: Project modified to include three separated sections: list books, add books and contact using SPA methodology.
+
 ## LIVE DEMO: 
 
 [Awesome Books Project](https://hanszizold.github.io/Awesome_Books/)
