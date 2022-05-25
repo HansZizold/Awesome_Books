@@ -84,6 +84,8 @@ hr {
 .library {
   border: 2px solid #000;
   margin-bottom: 24px;
+  min-height: 200px;
+  width: 100%;
 }
 
 ul {
@@ -122,6 +124,7 @@ ul {
 
 .lilinks:hover {
   color: blue;
+  cursor: pointer;
 }
 
 .header-title {
@@ -160,7 +163,7 @@ h1 {
   text-align: center;
 }
 .contact-info {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -179,4 +182,12 @@ h1 {
   margin-top: 16px;
   /* list-style: decimal; */
   align-self: flex-start;
+}
+
+.addmybooks {
+  display: none
+}
+
+.bookshelf {
+  display: unset;
 }
