@@ -144,7 +144,7 @@ ul {
 
 .footer {
   width: 96%;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
 }
 
@@ -164,4 +164,19 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.contactinf {
+  margin-bottom: 24px;
+}
+
+.contact-text {
+  margin: 0;
+  align-self: flex-start;
+}
+
+.contactdata {
+  margin-top: 16px;
+  /* list-style: decimal; */
+  align-self: flex-start;
 }
