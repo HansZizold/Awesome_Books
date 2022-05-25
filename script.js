@@ -38,7 +38,7 @@ class Book {
         elem.parentNode.remove();
 
         this.bookList = this.bookList.filter(
-          (book) => book.index !== Number(elem.parentNode.id),
+          (book) => book.index !== Number(elem.parentNode.id)
         );
 
         localStorage.setItem('mylibrary', JSON.stringify(this.bookList));
@@ -48,7 +48,9 @@ class Book {
 
   addhtml() {
     ullibrary.innerHTML = '';
-    this.bookList.forEach((element) => ullibrary.insertAdjacentHTML('beforeend', book(element)));
+    this.bookList.forEach((element) =>
+      ullibrary.insertAdjacentHTML('beforeend', book(element))
+    );
 
     localStorage.setItem('mylibrary', JSON.stringify(this.bookList));
   }
@@ -56,12 +58,12 @@ class Book {
 
 const myBooks = new Book();
 
-const listSelector = document.getElementById('list')
-const addBooksSelector = document.getElementById('Add-New') 
-const contactSelector = document.getElementById('Contact') 
-const addmybooks = document.querySelector('.addmybooks')
-const contactInfo = document.querySelector('.contact-info')
-const bookshelf = document.querySelector('.bookshelf')
+const listSelector = document.getElementById('list');
+const addBooksSelector = document.getElementById('Add-New');
+const contactSelector = document.getElementById('Contact');
+const addmybooks = document.querySelector('.addmybooks');
+const contactInfo = document.querySelector('.contact-info');
+const bookshelf = document.querySelector('.bookshelf');
 
 function showMyBooks() {
   addmybooks.style.display = 'none';
@@ -69,7 +71,15 @@ function showMyBooks() {
   bookshelf.style.display = 'unset';
 }
 
-listSelector.addEventListener('click', showMyBooks)
+listSelector.addEventListener('click', showMyBooks);
+
+function addNewBook() {
+  addmybooks.style.display = 'unset';
+  contactInfo.style.display = 'none';
+  bookshelf.style.display = 'none';
+}
+
+addBooksSelector.addEventListener('click', addNewBook);
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
