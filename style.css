@@ -120,6 +120,10 @@ ul {
   width: 60px;
 }
 
+.lilinks:hover {
+  color: blue;
+}
+
 .header-title {
   width: 100%;
   margin-left: 24px;
@@ -139,11 +143,25 @@ ul {
 }
 
 .footer {
+  width: 96%;
   position: absolute;
   bottom: 0;
-  width: 96%;
 }
 
 .footer-text {
   margin: 10px;
+}
+
+li.contact-list {
+  list-style: decimal;
+}
+
+h1 {
+  text-align: center;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
