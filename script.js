@@ -1,5 +1,3 @@
-// const bookList = [];
-
 const title = document.querySelector('.title');
 const author = document.querySelector('.author');
 const form = document.querySelector('#senddata');
@@ -9,7 +7,7 @@ const getmylibrary = JSON.parse(localStorage.getItem('mylibrary'));
 const book = ({ title, author, index }) => `
 <li id=${index}>
   <p>'${title}' by ${author} </p> 
-  <button class="removebook" id="removebook" value="Add Book" onclick="">Remove</button>
+  <button class="removebook" id="removebook" value="Add Book">Remove</button>
 </li>`;
 
 class Book {
@@ -18,9 +16,9 @@ class Book {
   }
 
   addbooks() {
-    if (this.bookList.some((book)=>book.title === title.value)){
-      alert("book already added")
-      return 
+    if (this.bookList.some(book => book.title === title.value)){
+      alert("book already added");
+      return;
     }
     const mybook = {
       title: title.value,
@@ -36,15 +34,13 @@ class Book {
 
   remove() {
     const removebook = document.querySelectorAll('.removebook');
-
     removebook.forEach((elem) => {
       elem.addEventListener('click', () => {
         elem.parentNode.remove();
-
+        console.log(book.index);
         this.bookList = this.bookList.filter(
-          (book) => book.index !== Number(elem.parentNode.id),
+          book => book.index !== Number(elem.parentNode.id)
         );
-
         localStorage.setItem('mylibrary', JSON.stringify(this.bookList));
       });
     });
