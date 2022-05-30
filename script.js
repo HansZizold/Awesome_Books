@@ -16,8 +16,8 @@ class Book {
   }
 
   addbooks() {
-    if (this.bookList.some(book => book.title === title.value)){
-      alert("book already added");
+    if (this.bookList.some((book) => book.title === title.value)) {
+      alert('book already added');
       return;
     }
     const mybook = {
@@ -37,9 +37,8 @@ class Book {
     removebook.forEach((elem) => {
       elem.addEventListener('click', () => {
         elem.parentNode.remove();
-        console.log(book.index);
         this.bookList = this.bookList.filter(
-          book => book.index !== Number(elem.parentNode.id)
+          (book) => book.index !== Number(elem.parentNode.id),
         );
         localStorage.setItem('mylibrary', JSON.stringify(this.bookList));
       });
